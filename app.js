@@ -6,7 +6,13 @@ require('./db_connect');
 
 require("dotenv").config();
 
+require('body-parser');
+
+const authorRouter = require('./routes/user');
+
 const port = process.env.port || 3000;
 
 
-app.listen((port), () => console.log(`Backend Node Application is listen at the ${port}`));
+app.use('/',authorRouter);
+
+app.listen((port), () => console.log(`Backend Node Application is listen at the best ${port}`));
