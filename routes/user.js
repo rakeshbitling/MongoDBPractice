@@ -5,8 +5,12 @@ const router = express.Router();
 const UserModel = require('../models/user');
 
 router.get('/user', async (req, res) => {
-    let u_data = await UserModel.find({});
-    res.send(u_data);
+    try {
+        let u_data = await UserModel.find({});
+        res.send(u_data);    
+    }catch(error) {
+        res.status(500).send({'message' : 'something went wrong'});
+    }
 });
 
 router.post('/user', async (req, res) => {
