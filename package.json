@@ -1,0 +1,28 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "this is project for everyone",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "dot-env": "0.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshbitling/MongoDBPractice.git"
+  },
+  "author": "Rakesh Bitling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakeshbitling/MongoDBPractice/issues"
+  },
+  "homepage": "https://github.com/rakeshbitling/MongoDBPractice#readme"
+}
